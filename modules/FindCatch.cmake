@@ -1,4 +1,7 @@
 # - Try to find catch framework
+if(Catch_FOUND)
+  return()
+endif()
 find_path(CATCH_INCLUDE_DIR catch.hpp PATHS ${EXTERNAL_ROOT}/include)
 
 set(CATCH_INCLUDE_DIRS ${CATCH_INCLUDE_DIR} )
